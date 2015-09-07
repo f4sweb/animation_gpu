@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>SimpleView</title>
+	<link rel="stylesheet" href="../_css/common.css">
+	<style type="text/css">
+		.parentNode{
+			width:400px;
+			height:400px;
+			border:1px solid #333;
+		}
+		.childNode{
+			width:250px;
+			height:250px;
+			border:1px solid #333;
+			margin:30px 0 0 50px;
+		}
+		#bright01{
+			z-index:10;
+		}
+		#bright02{
+			z-index:10;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>アニメにz-index指定</h1>
+	<div class="parentNode">
+		<span class="btn">ボタン<span id="bright01" class="anim"></span></span>
+		<div class="childNode">
+			<span class="btn">ボタン<span id="bright02" class="anim"></span></span>
+		</div>
+	</div>
+
+</body>
+</html>

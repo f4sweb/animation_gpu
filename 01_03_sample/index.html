@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>SimpleView</title>
+	<link rel="stylesheet" href="../_css/common.css">
+	<style type="text/css">
+		.listWrap{
+			display: inline-block;
+			border:1px solid #333;
+			padding:10px;
+			vertical-align: top;
+			width:400px;
+		}
+		ul{
+			position: absolute;
+		}
+		li{
+			position: absolute;
+		}
+		li p{
+			left:0px;
+			top:0px;
+			position: absolute;
+		}
+		li > span{
+			position: absolute;
+			left:200px;
+		}
+		li:nth-child(1){
+			top:0px;
+		}
+		li:nth-child(2){
+			top:50px;
+		}
+		li:nth-child(3){
+			top:100px;
+		}
+		li:nth-child(4){
+			top:150px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>ul li span をposition:absolute</h1>
+	<div class="listWrap">
+
+		<ul>
+			<li>
+				<p>リストのテキスト</p>
+				<span class="btn">ボタン<span id="bright01" class="anim"></span></span>
+			</li>
+			<li>
+				<p>リストのテキスト</p>
+				<span class="btn">ボタン</span>
+			</li>
+			<li>
+				<p>リストのテキスト</p>
+				<span class="btn">ボタン</span>
+			</li>
+			<li>
+				<p>リストのテキスト</p>
+				<span class="btn">ボタン</span>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+</body>
+</html>
